@@ -1,0 +1,10 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class countingZeros {
+	public static void main(String) {
+		a = 3;
+		b = 1;
+		System.out.println(x^y);
+		
+	}}
