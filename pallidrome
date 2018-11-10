@@ -1,0 +1,96 @@
+<html>
+	<body>
+		<script>
+			//console.log("hello");
+			/* 
+			(function fun(word) {
+				//console.log("hello");
+			    var sum = 1;
+				//var x = ["he","he","lw","he","shw"];
+				var x = "madam";
+				for(var i = 0 ; i<=5 ;i++) {
+					for(var j = i+1 ; j<=5;j++)
+					if(x[i] == x[j]){
+					console.log("yes");
+					}else{
+					console.log("no");
+					}
+				}
+				*/
+				
+				
+				/* (function isfun() {
+					var word = "hello";
+					for(var i = 0;i<=5;i++) {
+						if(word == 0 || word.length == null) {
+							return false;
+						}
+						//lastindex imagine as middle
+						var lastindex = Math.ceil(word.length/2);
+						for(var i = 0 && i<lastindex ; i<word.length ;i++) {
+							if(word[i] == word[word.length - i - 1]) {
+								return false;
+							}
+							console.log("ok");
+							return true;
+						}
+					}
+			 }()); */
+		/*var word = "madam";
+		var none = Palindrome(word); 
+			function Palindrome(word){
+				var i,wLength = word.length-1,wLengthToCompare = wLength/2;
+					for (i = 0; i <= wLengthToCompare ; i++) {
+						if (word.charAt(i) != word.charAt(wLength-i)) {
+						console.log(word.charAt(i));
+						      return false;
+					}
+				}
+			return true;
+} 	
+console.log(none);
+			*/
+			
+			/*
+			
+			 function palindrom(S){
+				s = S.toString();
+				var f = true; l = s.length/2, len = s.length -1;
+				for(var i=0; i < l; i++){
+					if(s[i] != s[len - i]){
+					console.log(s[i]);
+						f = false; 
+						break;
+					}
+				}
+				return f;
+    }
+	console.log(palindrom(12321)); */
+	
+/*function s(str) {
+			var re = /[^A-Za-z0-9]/g;
+			var str = str.toLowerCase().replace(re);
+			for (var i = 0; i < len/2; i++) {
+            if (str[i] !== str[len - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
+		}
+		
+		*/
+		
+		function palindrome(str){
+    for (var i = 0; i <= str.length; i++){ 
+        if  (str[i] !== str[str.length - 1 - i]) {
+            return "The string is not a palindrome";
+        }
+    }
+return "The string IS a palindrome"
+}
+
+palindrome("abcdcba"); //"The string IS a palindrome"
+palindrome("abcdcb"); //"The string is not a palindrome";
+		</script>
+	</body>
+<html>
