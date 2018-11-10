@@ -1,0 +1,36 @@
+/* algo */
+/*
+intialize k  to 1;
+intialize sum for k
+check sum to arr with last k element and  assign to arr	
+*/
+
+import java.util.*;
+import java.util.Scanner;
+
+public class FibonnaciiK {
+	public static void main(String args[]) {
+			Scanner sc = new Scanner(System.in);
+			int k = sc.nextInt();
+			int n = sc.nextInt();
+			int[] arr = new int[n+1];
+			int i =0;
+			int sum = k;
+
+			if(k<n) {
+				System.out.println("1");
+				return 1;
+			}
+			for(int i = 1;i<=k;i++) {
+					arr[i] = 1;
+			}
+			arr[i] = sum;
+			
+			for(int i = k+2;i<=n;i++) { //k+2 => sum + 2  => 1 1 +2 => 4
+				arr[i] =sum + arr[arr.length - i - 1] + arr[i-1];
+			}
+			sum = arr[i];
+			System.out.println(array[N]); //last term
+		
+	
+	}}
