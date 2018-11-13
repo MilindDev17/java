@@ -1,0 +1,46 @@
+import java.util.*;
+public class creditCard {
+	static String info(String name) {
+		//char[] ch = name.toCharArray();
+			char[] ch = new char[name.length()];
+		for(int i = 0;i<name.length();i++) {
+			ch[i] = name.charAt(i); 
+		}	
+		for(int i = 0;i<name.length() - 4;i++) {
+			ch[i] = '*';
+		}
+		System.out.println(ch);
+		return name;
+		
+	}
+	void info()
+	{
+		String s="lokeshsingh12345";
+		for(int i=0;i<s.length();i++)
+		{
+			if(i<s.length()-4)
+				System.out.print("*");
+			else
+				System.out.print(s.charAt(i));
+		}
+	}
+	void buffer()
+	{
+		String s="lokesh";
+		s=s.concat(" singh");
+		System.out.println(s);
+		StringBuffer sb=new StringBuffer("miland");
+		sb.append(" dev");
+		System.out.println(sb);
+		
+	}
+	
+	public static void main(String args[]) {
+		creditCard cx = new creditCard();
+      String name = "MilindDeva15556";
+	    cx.info(name);
+	    cx.info();
+	    cx.buffer();
+}}
+ 
+
