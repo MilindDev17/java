@@ -1,0 +1,15 @@
+package Applet;
+
+import java.applet.*;
+import java.awt.*;
+
+public class WelcomeToApplet extends Applet
+{
+	// create paint class to print on the screen.
+	public void paint (Graphics g)
+	{		
+		// Enter message with co-ordinates to make it in centre.
+		g.drawString ("Welcome To Includehelp", 25, 50);
+	  
+	}
+}
